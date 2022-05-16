@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "image.h"
+#include "header/image.h"
 
 static struct Kernel selected_kernel;
 static unsigned selected_k_half;

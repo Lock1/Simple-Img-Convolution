@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "image.h"
+#include "header/image.h"
 
 void read_image(FILE *fptr, struct Image *img) {
     // Header

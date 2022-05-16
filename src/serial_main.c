@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "image.h"
+#include "header/image.h"
 
 struct Image process_image(struct Image *img, enum KernelType k);
 

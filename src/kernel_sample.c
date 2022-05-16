@@ -1,4 +1,4 @@
-#include "image.h"
+#include "header/image.h"
 // Kernel matrices, symmetric kernel only
 // Kernel samples : en.wikipedia.org/wiki/Kernel_(image_processing)
 
