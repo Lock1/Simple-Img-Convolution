@@ -1,2 +1,4 @@
-# Simple-Img-Convolution
-Simple image convolution implemented in C &amp; Python, intended for exercise problem
+# Simple Image Convolution
+**TBA**
+
+Python utils tested on Windows 10, program tested on Ubuntu WSL2
