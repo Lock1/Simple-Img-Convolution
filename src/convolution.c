@@ -21,6 +21,7 @@ struct Pixel calculate_conv(struct Image *img, unsigned row, unsigned col) {
         }
     }
 
+    // Overflow policy : Clamp to [0, 255]
     struct Pixel res_px;
     res_px.r = (byte) clamp_color(r_red);
     res_px.g = (byte) clamp_color(r_green);
@@ -29,7 +30,7 @@ struct Pixel calculate_conv(struct Image *img, unsigned row, unsigned col) {
 }
 
 struct Image process_image(struct Image *img, enum KernelType k) {
-    // Edge handling policy = Crop, resulting image will have black border
+    // Edge handling policy : Crop, resulting image will have black border
     struct Image result;
     result.width  = img->width;
     result.height = img->height;

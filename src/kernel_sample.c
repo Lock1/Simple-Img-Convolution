@@ -12,7 +12,7 @@ const struct Kernel k_iden = {
     }
 };
 
-const struct Kernel k_ridge = { // FIXME : ??
+const struct Kernel k_ridge = {
     .k_size       = 3,
     .k_multiplier = 1.0,
     .k = {

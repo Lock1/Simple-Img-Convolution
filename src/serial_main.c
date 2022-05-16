@@ -26,12 +26,16 @@ void conv(char const *filename, enum KernelType k, char const *appended_filename
     fclose(fptr);
 }
 
+
+
 int main(int argc, char const *argv[]) {
     if (argc < 2) {
         fprintf(stderr, "usage: s_conv <src1> <src2> ...\n");
         exit(1);
     }
 
+    // TODO : Multiple source (?)
+    // TODO : Test stack sizes & avoid malloc
     conv(argv[1], SHARPEN_3, "sharp3");
     conv(argv[1], SHARPEN_5, "sharp5");
     conv(argv[1], RIDGE,      "ridge");
